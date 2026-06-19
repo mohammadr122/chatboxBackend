@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings (برای Node.js)
+    "module": "commonjs",           // ✅ تغییر از nodenext به commonjs
+    "target": "ES2020",             // ✅ مناسب برای Node.js
+    "lib": ["ES2020"],              // ✅ اضافه شد
+    "types": ["node"],              // ✅ فعال شد (برای پشتیبانی از require, process, ...)
+    "moduleResolution": "node",     // ✅ اضافه شد
+
+    // Other Outputs
+    "sourceMap": true,
+    
+    // Stricter Typechecking Options
+    "strict": true,
+    
+    // Essential Options (برای بک‌اند)
+    "esModuleInterop": true,       
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,      
+    
+    // Keep these
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
